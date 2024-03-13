@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div id="Status"></div>
+    <div id="Activity"></div>
+    <main>
+        <section>
+            <h2>Create a List</h2>
+            <p id="CreateList">
+                <input id="createList" type="text" name="create" placeholder="Enter list to create" value="">
+                <button type="button" data-action="create_list" data-form="CreateList">Create</button>
+            </p>
+        </section>
+        <section>
+            <h2>View a List</h2>
+            <p id="ViewList">
+                <input id="viewList" type="text" name="view" placeholder="Enter list to view" value="">
+                <button type="button" data-action="view_list" data-form="ViewList">View</button>
+            </p>
+        </section>
+        <section>
+            <h2>Delete a List</h2>
+            <p id="DeleteList">
+                <input id="deleteList" type="text" name="delete" placeholder="Enter list to delete" value="">
+                <button type="button" data-action="delete_list" data-form="DeleteList">Delete</button>
+            </p>
+        </section>
+        <section>
+            <h2>Rename a List</h2>
+            <p id="RenameList">
+                <input id="renameList1" type="text" name="rename1" placeholder="Enter list to Rename" value="">
+                <input id="renameList2" type="text" name="rename2" placeholder="Enter new name" value="">
+                <button type="button" data-action="rename_list" data-form="RenameList">Rename</button>
+            </p>
+        </section>
+        <section>
+            <h2>Add item to List</h2>
+            <p id="ItemInList">
+                <input id="listOfItem" type="text" name="list" placeholder="Enter list name" value="">
+                <input id="itemInList" type="text" name="item" placeholder="Enter item name" value="">
+                <button type="button" data-action="add_item" data-form="ItemInList">Add</button>
+                <button type="button" data-action="delete_item" data-form="ItemInList">Delete</button>
+            </p>
+        </section>
+        <section>
+            <h2>Mark item on List</h2>
+            <p id="MarkItem">
+                <input id="listToMark" type="text" name="list" placeholder="Enter list name" value="">
+                <input id="markOnList" type="text" name="item" placeholder="Enter item name" value="">
+                <button type="button" data-action="check_item" data-form="MarkItem">Check</button>
+                <button type="button" data-action="uncheck_item" data-form="MarkItem">Uncheck</button>
+            </p>
+        </section>
+    </main>
+    <br>
+    <footer>
+        &copy; 2023 Wilbert Rodriguez, All Rights Reserved.
+    </footer>
+    <script type="module" src="todo.js"></script>
+</body>
+
+
+</html>
